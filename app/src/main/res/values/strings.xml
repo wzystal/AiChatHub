@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">DeepSeek</string>
+    <string name="chat_title">DeepSeek</string>
+    <string name="chat_subtitle">智能对话助手</string>
+    <string name="input_hint">给 DeepSeek 发送消息</string>
+    <string name="send">发送</string>
+    <string name="stop">停止</string>
+    <string name="reasoning_title">深度思考</string>
+    <string name="reasoning_thinking">思考中</string>
+    <string name="reasoning_expanded">收起思考过程</string>
+    <string name="reasoning_collapsed">展开思考过程</string>
+    <string name="empty_greeting">今天有什么可以帮到你？</string>
+    <string name="empty_subtitle">我是 DeepSeek，随时为你解答问题</string>
+    <string name="suggestion_1">写一段 Python 快速排序</string>
+    <string name="suggestion_2">解释量子纠缠是什么</string>
+    <string name="suggestion_3">帮我写一封邮件</string>
+    <string name="suggestion_4">今天适合做什么菜？</string>
+    <string name="suggestion_5">用简单的话解释相对论</string>
+    <string name="suggestion_6">帮我制定一份健身计划</string>
+    <string name="suggestion_7">这段代码有什么 bug？</string>
+    <string name="suggestion_8">推荐几本适合入门的 AI 书籍</string>
+    <string name="suggestion_9">把下面这段话润色得更专业</string>
+    <string name="suggestion_10">东京三日游路线怎么安排？</string>
+    <string name="suggestion_11">如何高效学习一门新语言？</string>
+    <string name="suggestion_12">帮我起 5 个产品名字</string>
+    <string-array name="suggestion_pool">
+        <item>@string/suggestion_1</item>
+        <item>@string/suggestion_2</item>
+        <item>@string/suggestion_3</item>
+        <item>@string/suggestion_4</item>
+        <item>@string/suggestion_5</item>
+        <item>@string/suggestion_6</item>
+        <item>@string/suggestion_7</item>
+        <item>@string/suggestion_8</item>
+        <item>@string/suggestion_9</item>
+        <item>@string/suggestion_10</item>
+        <item>@string/suggestion_11</item>
+        <item>@string/suggestion_12</item>
+    </string-array>
+    <string name="new_chat">新对话</string>
+    <string name="menu">菜单</string>
+</resources>

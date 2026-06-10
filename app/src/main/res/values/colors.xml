@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ds_blue">#4D6BFE</color>
+    <color name="ds_blue_dark">#4166D5</color>
+    <color name="ds_blue_light">#EEF2FF</color>
+    <color name="ds_bg">#F9FBFF</color>
+    <color name="ds_surface">#FFFFFF</color>
+    <color name="ds_text_primary">#1F2329</color>
+    <color name="ds_text_secondary">#6B7280</color>
+    <color name="ds_text_tertiary">#9CA3AF</color>
+    <color name="ds_border">#E5E7EB</color>
+    <color name="ds_reasoning_bg">#F3F4F6</color>
+    <color name="ds_user_bubble">#4D6BFE</color>
+    <color name="ds_error_bg">#FEF2F2</color>
+    <color name="ds_error_text">#DC2626</color>
+</resources>
