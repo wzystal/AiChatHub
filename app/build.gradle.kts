@@ -16,10 +16,12 @@ val localProperties =
   }
 
 fun configuredValue(name: String, localName: String = name): String =
-  providers.gradleProperty(name).orNull
+  (providers.gradleProperty(name).orNull
     ?: providers.environmentVariable(name).orNull
     ?: localProperties.getProperty(localName)
-    ?: ""
+    ?: "")
+    .filter { !it.isISOControl() }
+    .trim()
 
 val keystorePropertiesFile = rootProject.file("keystore.properties")
 val keystoreProperties = Properties()
