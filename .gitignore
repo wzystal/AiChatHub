@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+keystore.properties
+signing/release.jks
+signing/secrets.local.properties
+.build-and-install.stamp
+.build-and-install-crash.log
