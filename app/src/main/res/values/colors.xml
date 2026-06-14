@@ -13,4 +13,5 @@
     <color name="ds_user_bubble">#4D6BFE</color>
     <color name="ds_error_bg">#FEF2F2</color>
     <color name="ds_error_text">#DC2626</color>
+    <color name="ic_launcher_background">#4D6BFE</color>
 </resources>
