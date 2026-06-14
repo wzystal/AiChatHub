@@ -22,7 +22,7 @@ class MockAiStreamClient(
     val answer =
       buildString {
         append(prefix)
-        append("你好！我是 **DeepSeek** 助手。\n\n")
+        append("你好！我是 **AI智聊** 助手。\n\n")
         append("收到你的问题：**")
         append(question.ifBlank { "你好" })
         append("**\n\n")
