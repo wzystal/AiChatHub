@@ -41,12 +41,9 @@ jobs:
           DEEPSEEK_BASE_URL: ${{ secrets.DEEPSEEK_BASE_URL }}
           DEEPSEEK_MODEL: ${{ secrets.DEEPSEEK_MODEL }}
         run: |
-          if [[ -z "${DEEPSEEK_API_KEY}" ]]; then
-            echo "::error::DEEPSEEK_API_KEY 未配置，Release 包无法调用 DeepSeek API。"
-            echo "请在本机执行: ~/tools/scripts/setup-deepseek-secret.sh --project-dir $(pwd) wzystal/AiChatHub"
-            exit 1
-          fi
-          chmod +x gradlew && ./gradlew assembleRelease
+          chmod +x gradlew
+          _tools/ci_check_build_secrets.sh signing/ci-build-secrets.manifest
+          ./gradlew assembleRelease
 
       - name: Version tag
         id: ver

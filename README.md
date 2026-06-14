@@ -136,17 +136,14 @@ deepseek.model=deepseek-chat
 
 ### CI Release 构建（GitHub Actions）
 
-本地 `local.properties` 不会上传到 GitHub。要让钉钉/蒲公英分发的 Release 包可用，需将 API Key 存为 **GitHub Secret**（仅 CI 可读，不会出现在代码仓库）：
+本地 `local.properties` 不会上传到 GitHub。Release 包所需密钥由 **`signing/ci-build-secrets.manifest`** 声明，通过 GitHub Secret 在 CI 注入 `BuildConfig`：
 
 ```bash
-# 方式一：从 local.properties 自动读取
-~/tools/scripts/setup-deepseek-secret.sh --project-dir ~/work/AiChatHub
-
-# 方式二：直接指定
-gh secret set DEEPSEEK_API_KEY --repo wzystal/AiChatHub --body "sk-你的密钥"
+# 从 local.properties 读取并写入 GitHub Secret
+~/tools/scripts/setup-app-build-secrets.sh --project-dir ~/work/AiChatHub
 ```
 
-CI 构建时通过环境变量 `DEEPSEEK_API_KEY` 注入 `BuildConfig`，与本地开发逻辑一致。
+通用接入说明见 `~/tools/scripts/app-build-secrets.README`。
 
 > **安全提示**：Release APK 会内置 API Key（与本地 debug 包相同）。仅适合个人或小范围分发；勿将 APK 公开传播。若需多人使用且保护密钥，应改为自建后端代理。
 
